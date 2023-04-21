@@ -49,6 +49,7 @@ var createNewTaskElement=function(taskString){
     deleteButtonImg.className="btn-img";
     deleteButton.appendChild(deleteButtonImg);
 
+    listItem.className="task";
 
     //and appending.
     listItem.appendChild(checkBox);
