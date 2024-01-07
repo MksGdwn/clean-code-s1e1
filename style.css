@@ -4,21 +4,21 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.header {
+.page-header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.header-image {
+.page-header__image {
   width: 100%;
 }
-.header .info {
+.page-header__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .header {
+  .page-header {
     text-align: center;
   }
 }
@@ -27,14 +27,14 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task-label,
-.task-input,
-.new-task-input {
+.task__label,
+.task__input,
+.new-task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.new-task-wrapper {
+.new-task__wrapper {
   display: flex;
 }
 ul {
@@ -71,8 +71,8 @@ button {
   margin: 0;
   text-transform: uppercase;
 }
-.task-input,
-.new-task-input {
+.task__input,
+.new-task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -84,17 +84,17 @@ button {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.task-input:focus,
-.new-task-input:focus {
+.task__input:focus,
+.new-task__input:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task-label {
+.new-task__label {
   display: block;
   margin: 0 0 20px;
 }
-.new-task-input {
+.new-task__input {
   width: 318px;
 }
 
@@ -112,43 +112,43 @@ button {
   vertical-align: middle;
 }
 
-.task-checkbox {
+.task__checkbox {
   margin: 0 10px;
 }
-.task-label {
+.task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.task-input {
+.task__input {
   width: 226px;
 }
-.btn-image {
+.btn__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn-image:hover {
+.btn__image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed .task-label {
+.completed__list .task__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-input {
+.task__input {
   display: none;
 }
 
-.edit .task-input {
+.task_edit .task__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit .task-label {
+.task_edit .task__label {
   display: none;
 }
